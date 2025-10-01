@@ -92,12 +92,12 @@ const Hero = () => {
     return (
         <section id="home" className="hero">
             <video autoPlay loop muted playsInline className="hero-background-video">
-                <source src="../src/assets/videos/Video1.mp4" type="video/mp4" />
+                <source src="assets/videos/Video1.mp4" type="video/mp4" />
                 Tu navegador no soporta videos.
             </video>
             <div className="hero-content">
                 <Typewriter text="Creamos marcas con identidad." />
-                <a href="https://wa.me/TUNUMERO" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
+                <a href="https://wa.me/" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
             </div>
         </section>
     );
@@ -141,12 +141,12 @@ const Portfolio = () => {
   const [modalContent, setModalContent] = useState<PortfolioItem | null>(null);
 
   const portfolioItems: PortfolioItem[] = [
-    { id: 1, title: "Branding Cosmético", description: "Diseño de identidad visual para marcas cosméticas.", type: "image", src: "../src/assets/fotos/foto1.jpg" },
-    { id: 2, title: "Social Media Flatlay", description: "Fotografía creativa para redes sociales.", type: "video", src: "../src/assets/videos/Video2.mp4" },
-    { id: 3, title: "Diseño Gráfico", description: "Creación de piezas gráficas únicas.", type: "image", src: "../src/assets/fotos/foto2.jpg" },
-    { id: 4, title: "Cobertura de Evento", description: "Capturamos los mejores momentos de tus eventos.", type: "video", src: "../src/assets/videos/Video3.mp4" },
-    { id: 5, title: "Producción Zion", description: "Producción audiovisual para clientes destacados.", type: "image", src: "../src/assets/fotos/foto3.jpg" },
-    { id: 6, title: "Proceso de Branding", description: "Un vistazo al proceso creativo detrás de nuestras marcas.", type: "video", src: "../src/assets/videos/Video4.mp4" },
+  { id: 1, title: "Branding Cosmético", description: "Diseño de identidad visual para marcas cosméticas.", type: "image", src: "assets/fotos/foto1.jpg" },
+  { id: 2, title: "Social Media Flatlay", description: "Fotografía creativa para redes sociales.", type: "video", src: "assets/videos/Video2.mp4" },
+  { id: 3, title: "Diseño Gráfico", description: "Creación de piezas gráficas únicas.", type: "image", src: "assets/fotos/foto2.jpg" },
+  { id: 4, title: "Cobertura de Evento", description: "Capturamos los mejores momentos de tus eventos.", type: "video", src: "assets/videos/Video3.mp4" },
+  { id: 5, title: "Producción Zion", description: "Producción audiovisual para clientes destacados.", type: "image", src: "assets/fotos/foto3.jpg" },
+  { id: 6, title: "Proceso de Branding", description: "Un vistazo al proceso creativo detrás de nuestras marcas.", type: "video", src: "assets/videos/Video4.mp4" },
   ];
 
   const openModal = (item: PortfolioItem) => {
@@ -224,11 +224,11 @@ const Portfolio = () => {
 }
 
 const AboutUs = () => {
-    const images = [
-        "../src/assets/fotos/foto1.jpg",
-        "../src/assets/fotos/foto_quienes_somos_1.jpg",
-        "../src/assets/fotos/foto_quienes_somos_2.jpg"
-    ];
+  const images = [
+    "assets/fotos/foto1.jpg",
+    "assets/fotos/foto_quienes_somos_1.jpg",
+    "assets/fotos/foto_quienes_somos_2.jpg"
+  ];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
@@ -265,9 +265,9 @@ const AboutUs = () => {
 
 const Testimonials = () => {
     const [current, setCurrent] = useState(0);
-    const testimonialsData = [
-        { name: "Vulcano Group", text: "Lume nos ayudó a definir nuestra voz en redes y a conectar genuinamente con nuestra comunidad. ¡Su visión estratégica es impecable!", image: "../src/assets/fotos/foto_testimonio_vulcano.jpg" },
-        { name: "Peluquería Zion", text: "Profesionalismo y creatividad de principio a fin. Los resultados hablan por sí solos.", image: "../src/assets/fotos/foto_testimonio_peluqueria.jpg" },
+  const testimonialsData = [
+    { name: "Vulcano Group", text: "Lume nos ayudó a definir nuestra voz en redes y a conectar genuinamente con nuestra comunidad. ¡Su visión estratégica es impecable!", image: "assets/fotos/foto_testimonio_vulcano.jpg" },
+    { name: "Peluquería Zion", text: "Profesionalismo y creatividad de principio a fin. Los resultados hablan por sí solos.", image: "assets/fotos/foto_testimonio_peluqueria.jpg" },
        // { name: "Cliente 3", text: "Supieron captar nuestra esencia y transmitirla a la perfección. ¡Súper recomendadas!", image: "https://randomuser.me/api/portraits/women/60.jpg" }
     ];
 
@@ -316,7 +316,7 @@ const Contact = () => {
              Obtener Propuesta Personalizada
            </a>
            <a 
-             href="https://wa.me/TUNUMERO" 
+             href="https://wa.me/5491135685175" 
              className="btn btn-whatsapp" 
              target="_blank" 
              rel="noopener noreferrer"
